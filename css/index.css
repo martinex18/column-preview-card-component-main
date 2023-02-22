@@ -18,7 +18,6 @@ body{
     background-color: var(--Bright-orange);
     width: 12.5rem;
     height: 25rem;
-    border-radius: 8px 0 0 8px;
     flex-basis: 15rem;
 }
 
@@ -33,7 +32,6 @@ body{
     background-color: var(--Very-dark-cyan);
     width: 12.5rem;
     height: 25rem;
-    border-radius: 0 8px 8px 0;
     flex-basis: 15rem;
 }
 
@@ -63,6 +61,7 @@ body{
     border-radius: 12px;
     border: none;
     color: var(--Bright-orange);
+    font-family: var(--Lexend-deca);
 }
 
 .boton_2{
@@ -72,6 +71,7 @@ body{
     border-radius: 12px;
     border: none;
     color: var(--Dark-cyan);
+    font-family: var(--Lexend-deca);
 }
 
 .boton_3{
@@ -81,4 +81,48 @@ body{
     border-radius: 12px;
     border: none;
     color: var(--Very-dark-cyan);
+    font-family: var(--Lexend-deca);
+}
+
+@media screen and (min-width: 375px){
+    .cartas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 600px;
+    }
+
+    .carta_1{
+        border-radius: 8px 8px 0 0;
+    }
+
+    .carta_3{
+        border-radius: 0 0 8px 8px;
+    }
+
+    .boton_1{
+        width: 8rem;
+        margin: 20px 30px 10px;
+        padding: 10px;
+        border-radius: 12px;
+        border: none;
+        color: var(--Bright-orange);
+    }
+    
+    .boton_2{
+        width: 8rem;
+        margin: 20px 30px 12px;
+        padding: 12px;
+        border: none;
+        color: var(--Dark-cyan);
+    }
+    
+    .boton_3{
+        width: 8rem;
+        margin: 20px 30px 10px;
+        padding: 12px;
+        border: none;
+        color: var(--Very-dark-cyan);
+    }
 }
